@@ -2,7 +2,9 @@ import * as https from "https";
 
 export class NftData {
 
-    #collection;
+    constructor() {
+        this.collection = null;
+    }
 
     getAllCollections() {
         let encoded = "https://api.covalenthq.com/v1/137/tokens/tokenlists/all/?key=ckey_99de0aa6e5c74c6aa3a6162f503";
@@ -22,7 +24,8 @@ export class NftData {
                    try {
                        console.log(rawData);
                        let data = JSON.parse(rawData);
-                       this.#collection = data.items;
+                       this.collection = data.data.items;
+                       console.log(this.collection);
 
                        resolve("Successful");
                    } catch (error) {
