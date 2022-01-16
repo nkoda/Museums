@@ -5,7 +5,6 @@ import Card from '@material-ui/core/Card';
 import { CardActionArea, CardContent } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {useNavigate} from "react-router-dom";
 
 
 const useStyles = makeStyles({
@@ -20,11 +19,10 @@ const useStyles = makeStyles({
   
 function Post({username, caption, img_url, nft_name}) {
     const classes = useStyles();
-    // const navigate = useNavigate();
     return (
         <div className={classes.spacing}>
         <Card className = {classes.custom}>
-            <CardActionArea component={Link} to="/App">
+            <CardActionArea component={Link} to="../pages/PostPage">
                 <div className="nft__title">
                     <h3>{nft_name}</h3>
                 </div>
