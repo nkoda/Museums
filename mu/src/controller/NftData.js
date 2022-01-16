@@ -1,13 +1,12 @@
 import * as https from "https";
-import * as mocha from "mocha";
 
 export class NftData {
-
     #collection;
 
     getAllCollections() {
         let encoded = "https://api.covalenthq.com/v1/137/tokens/tokenlists/all/?key=ckey_99de0aa6e5c74c6aa3a6162f503";
         return new Promise((resolve, reject) => {
+
             https.get(encoded, (res) => {
                 let {statusCode} = res;
                 if (statusCode !== 200) {
