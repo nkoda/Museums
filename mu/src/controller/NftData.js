@@ -1,4 +1,5 @@
 import * as https from "https";
+import * as mocha from "mocha";
 
 export class NftData {
 
