@@ -42,6 +42,10 @@ export class NftData {
         });
     }
 
+    getTokenID(address) {
+        let encoded = "";
+    }
+
     writeData(data) {
         let path = "./data/" + data.updated_at + ".json";
         try {
