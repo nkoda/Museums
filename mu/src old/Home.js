@@ -15,87 +15,56 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@mui/material/CardMedia';
 import  CardContent from '@material-ui/core/CardContent';
 import Typography from '@mui/material/Typography';
-import {useEffect} from 'react';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
 function Home() {
-
-  let json = require('./data/nftObjects.json')
-  console.log(json, 'this is the  json obj');
-  console.log(json.nftObjects, 'this is the  json array');
-
-  // Pull data from data
-  // useEffect(() => {
-  // let json = require('./data/nftObjects.json')
-  // console.log(json, 'the json obj');
-  // console.log(json.nftObjects);
-  // for (let x of json.nftObjects) {
-  //   console.log(x.image);
-  // }
-// !!! TODO connnect front end to back end
-// }, []);
-
   const [posts, setPosts] = useState([
     {
-      username: "0x1532cf8977d51de6a609015a23365cdb25064bc1",
-     caption:"Meme Ltd.",
-     nft_name: "I wish I was understood",
-     img_url:"https://images.dontbuymeme.com/artist-series/fewocious/static/i-wish-i-was-understood.jpg"
+      username: "test_username_1",
+     caption:"test_caption_1",
+     nft_name: "A Bored Ape_1",
+     img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
      {
-       username: "0x0000000000000000000000000000000000000000",
-     caption:"Meme Ltd",
-     nft_name: "Silkroad",
-     img_url:"https://images.dontbuymeme.com/collections/badger/static/silkroad.jpg"
+       username: "test_username_2",
+     caption:"test_caption_2",
+     nft_name: "A Bored Ape_2",
+     img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
      {
-       username: "0x0000000000000000000000000000000000000000",
-     caption:"Holy Grail",
-     nft_name: "Meme Grail Relic",
-     img_url:"https://images.dontbuymeme.com/genesis/meme-grail-relic.png"
+       username: "test_username_3",
+     caption:"test_caption_3",
+     nft_name: "A Bored Ape_3",
+     img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
     {
-    username: "0x0000000000000000000000000000000000000000",
-    caption:"Pineapples",
-    nft_name: "Volatile Pineapples",
-    img_url:"https://images.dontbuymeme.com/artist-series/sven/static/volatile-pineapples.jpg"
+      username: "test_username_3",
+    caption:"test_caption_3",
+    nft_name: "A Bored Ape_3",
+    img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
    },
    {
-    username: "0x7c26ea66a3c62ad275adbad8397d19fd12b54d8e",
-    caption:"Stereoheadz",
-    nft_name: "StereoheadZ #468",
-    img_url:"http://stereoheadz.com/szmc/meta/images/live/szmc_image_01_00468.png"
+    username: "test_username_3",
+    caption:"test_caption_3",
+    nft_name: "A Bored Ape_3",
+    img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
     {
-      username: "0xb654c2002896268e6048680ad3110ef1717208ef",
-    caption:"Doodlesaurs",
-    nft_name: "Doodlesaur #3684",
-    img_url:"https://storage.googleapis.com/doodlesaurs/images/eqa51q3375az.png"
+      username: "test_username_3",
+    caption:"test_caption_3",
+    nft_name: "A Bored Ape_3",
+    img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
     {
-      username: "0xdb2497a2d30906bec48e23ea1b1a78c317f17b50",
-    caption:"Phantabear",
-    nft_name: "PHANTA BEAR #2397",
-    img_url:"https://d1kjtx52rxv2sn.cloudfront.net/phanta+bear+token/a284625a.png"
+      username: "test_username_3",
+    caption:"test_caption_3",
+    nft_name: "A Bored Ape_3",
+    img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     }
   ]);
-  
-  
-  // var obj = JSON.parse(json);
-  // var res = [];
-
-  // for(var i in obj)
-  //   res.push(obj[i]);
-
-  // console.log("this is the resulting array: " + res);
-
-  // const [posts, setPosts] = useState(
-  //   json.nftObjects
-  // );
-  
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
     setOpen(true);
@@ -142,7 +111,13 @@ function Home() {
                         <CardContent>
                             <Typography className="popup__text" variant="h3">{post.nft_name}</Typography>
                             <Typography paragraph>
-                            The PhantaBear project was jointly launched by Jay Chou's PHANTACi and Ezek. PhantaBear is a collection of 10,000 algorithmically generated digital collectibles that double as membership cards for the Ezek Club. Each PhantaBear has a unique set of traits and unlocks varying, unique levels of access and perks for its owner.
+                    Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
+                    medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
+                    occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
+                    large plate and set aside, leaving chicken and chorizo in the pan. Add
+                    pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
+                    stirring often until thickened and fragrant, about 10 minutes. Add
+                    saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
                         </Typography>
                         </CardContent> 
                         <Button>
