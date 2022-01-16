@@ -6,6 +6,7 @@ export class NftData {
         this.collection = null;
     }
 
+    // Returns JSON object including most updated date and array of NFT collections
     getAllCollections() {
         let encoded = "https://api.covalenthq.com/v1/137/tokens/tokenlists/all/?key=ckey_99de0aa6e5c74c6aa3a6162f503";
         return new Promise((resolve, reject) => {
@@ -22,12 +23,11 @@ export class NftData {
                 });
                 res.on("end", () => {
                    try {
-                       console.log(rawData);
                        let data = JSON.parse(rawData);
-                       this.collection = data.data.items;
-                       console.log(this.collection);
+                       console.log(data.data);
+                       console.log("getAllCollections: JSON Object (Date and collections) is successfully given");
+                       resolve(data.data);
 
-                       resolve("Successful");
                    } catch (error) {
                        reject(new Error("Error: Error in parsing"));
                    }
@@ -36,5 +36,9 @@ export class NftData {
                 });
             });
         });
+    }
+
+    writeData(data) {
+        // let path = "./data" +
     }
 }
