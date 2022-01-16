@@ -1,8 +1,9 @@
-import './App.css';
-import Header from './Header.js';
-import Post from './Post';
+import '../css/App.css';
+import Header from '../Components/Header.js';
+import Post from '../Components/Post';
 import React, {useState, useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
   // !!! TODO connnect front end to back end
   }, []);
   return (
+    <Router>
     <div className="app">
       <div className="app__header"> <Header owner = {owner}/> </div>
       <Grid container className="grid__container" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -67,11 +69,10 @@ function App() {
              nft_name={post.nft_name} img_url={post.img_url}></Post> 
              </Grid>
           ))
-
         }
       </Grid>
-      {/* Posts */}
     </div>
+    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from './logo.svg';
-import './HeaderLogoButton.css';
+import logo from '../logo.svg';
+import '../css/HeaderLogoButton.css';
 import Card from '@material-ui/core/Card';
 import { CardActionArea } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
@@ -18,7 +18,7 @@ function HeaderLogoButton() {
     const classes = useStyles();
     return (
         <Card className={classes.custom}>
-            <CardActionArea>
+            <CardActionArea component={Link} to="/App">
                 <div className = "logo-div" >
                     <img className="app_logo" src = {logo}/>
                 <h2>useums</h2>

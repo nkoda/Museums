@@ -1,6 +1,6 @@
 import React from 'react'
-import './Header.css';
-import SearchBar from './SearchBar';
+import '../css/Header.css';
+import SearchBar from '../SearchBar';
 import HeaderLogoButton from './HeaderLogoButton';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
