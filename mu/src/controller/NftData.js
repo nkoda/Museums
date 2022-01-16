@@ -1,5 +1,4 @@
 import * as https from "https";
-import * as fs from "fs";
 
 export function getAllNftObjects() {
     let addressIDs = [
