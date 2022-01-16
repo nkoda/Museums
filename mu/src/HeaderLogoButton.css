@@ -1,27 +1,28 @@
-
-.Title {
+.logo__button{
     box-sizing: border-box;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    object-fit: contain;
     align-items: baseline;
     /* padding: 2em; */
-    padding-top: 1px;
-    padding-bottom:1px;
     /* margin-bottom: 1em; */
     background-color: rgb(255, 255, 255);
     color: rgb(33, 187, 236);
-  }
-  .logo-div{ 
+}
+h2{
+    color: rgb(33, 187, 236);
+}
+.logo-div{ 
     Display: flex;
     Height: 10vh;
     padding-left:1rem;
-    Width: 100vw; 
+    /* Width: 100vw;  */
     Align-Items: center;
     Justify-Content: centre;
     }
-.search-bar{
-    padding-left:1em;
-    align-items: center;
-    color: white;
-}
+.title__grid__container{
+    direction:row;
+    justify-content:center;
+    align-items:center;
+    }
