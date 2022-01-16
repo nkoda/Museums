@@ -21,6 +21,24 @@
   border-bottom: 1px solid lightgray;
 }
 
+.popup__card {
+    padding: 30px;
+    display:block;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    
+    border-top: 1px solid lightgray;
+    border-radius: 2px;
+}
+.popup__img {
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.popup__text {
+  padding-top:20px;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -35,12 +53,12 @@
 .grid__container{
   direction:row;
   justify-content:center;
-  padding: 12px;
+  padding: 1px;
   align-items:center;
 }
 
 .post__tile {
-  padding: 5px;
+  padding: 2px;
 }
 
 @keyframes App-logo-spin {

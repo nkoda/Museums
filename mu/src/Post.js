@@ -22,7 +22,6 @@ function Post({username, caption, img_url, nft_name}) {
     return (
         <div className={classes.spacing}>
         <Card className = {classes.custom} >
-            <CardActionArea>
                 <div className="nft__title">
                     <h3>{nft_name}</h3>
                 </div>
@@ -34,7 +33,6 @@ function Post({username, caption, img_url, nft_name}) {
                     <h3>{username}</h3>
                 <h4 className="post__text"> {caption} </h4>
                 </div>
-            </CardActionArea>
         </Card>
         </div>
     )
