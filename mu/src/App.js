@@ -1,12 +1,12 @@
 import './App.css';
-import Title from './Header.js';
-import ImageGrid from './ImageGrid';
+import Header from './Header.js';
 import Post from './Post';
 import React, {useState, useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
 
 
 function App() {
+  const [owner] = 'Elon.Musk_11'
   const [posts, setPosts] = useState([
     {
       username: "test_username_1",
@@ -58,13 +58,14 @@ function App() {
   }, []);
   return (
     <div className="app">
-      <div className="app__header"> <Title /> </div>
-      {/* <ImageGrid/> */}
+      <div className="app__header"> <Header owner = {owner}/> </div>
       <Grid container className="grid__container" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {
           posts.map(post => (
+            <Grid item className="post__tile">
             <Post username={post.username} caption={post.caption} 
              nft_name={post.nft_name} img_url={post.img_url}></Post> 
+             </Grid>
           ))
 
         }

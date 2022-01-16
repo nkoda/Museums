@@ -4,24 +4,34 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    object-fit: contain;
+    align-items: center;
     /* padding: 2em; */
-    padding-top: 1px;
-    padding-bottom:1px;
     /* margin-bottom: 1em; */
     background-color: rgb(255, 255, 255);
     color: rgb(33, 187, 236);
   }
+
+  .head__avatar {
+    padding: 2rem;
+  }
   .logo-div{ 
     Display: flex;
     Height: 10vh;
-    padding-left:1rem;
-    Width: 100vw; 
+    /* padding-left:1px; */
+    justify-content:center;
     Align-Items: center;
     Justify-Content: centre;
     }
 .search-bar{
-    padding-left:1em;
+    padding-left:4rem;
     align-items: center;
     color: white;
+}
+
+.title__grid__container{
+  direction:row;
+  justify-content:center;
+  padding: px;
+  /* align-items:center; */
 }
