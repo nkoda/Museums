@@ -1,11 +1,10 @@
 import './css/App.css';
-import Header from './Components/Header.js';
-import Post from './Components/Post';
+import Header from './Header.js';
+import Post from './Post';
 import React, {useState, useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import PostPage from "./pages/PostsPage";
 function Home() {
   const [posts, setPosts] = useState([
     {

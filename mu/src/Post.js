@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Post.css';
+import './css/Post.css';
 import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
 import { CardActionArea, CardContent } from '@material-ui/core';
