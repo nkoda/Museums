@@ -1,15 +1,30 @@
 import React from 'react'
 import logo from './logo.svg';
 import './HeaderLogoButton.css';
+import Card from '@material-ui/core/Card';
+import { CardActionArea } from '@material-ui/core';
+import { makeStyles } from "@material-ui/core/styles";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+const useStyles = makeStyles({
+    custom: {
+      border: "none",
+      boxShadow: "none",
+      borderRadius: "6px"
+    }
+  });
 
 function HeaderLogoButton() {
+    const classes = useStyles();
     return (
-        <div className="logo_button">
-            <div className = "logo-div" >
-                <img className="app_logo" src = {logo}/>
-            <h2>useums</h2>
-            </div>
-        </div>
+        <Card className={classes.custom}>
+            <CardActionArea>
+                <div className = "logo-div" >
+                    <img className="app_logo" src = {logo}/>
+                <h2>useums</h2>
+                </div>
+            </CardActionArea>
+        </Card>
     )
 }
 

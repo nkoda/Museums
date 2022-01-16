@@ -54,7 +54,7 @@ function App() {
 
   // Pull data from data
   useEffect(() => {
-  // !!! TODO Pull data
+  // !!! TODO connnect front end to back end
   }, []);
   return (
     <div className="app">

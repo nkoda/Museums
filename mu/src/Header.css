@@ -7,7 +7,7 @@
     object-fit: contain;
     align-items: center;
     /* padding: 2em; */
-    /* margin-bottom: 1em; */
+    margin-bottom: 1em;
     background-color: rgb(255, 255, 255);
     color: rgb(33, 187, 236);
   }
@@ -25,6 +25,7 @@
     }
 .search-bar{
     padding-left:4rem;
+    display: flex;
     align-items: center;
     color: white;
 }
@@ -32,6 +33,5 @@
 .title__grid__container{
   direction:row;
   justify-content:center;
-  padding: px;
-  /* align-items:center; */
+  align-items:center;
 }

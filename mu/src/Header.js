@@ -8,11 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 function Header({owner}) {
   return (
-    <div className= "Title">
-        {/* <div className = "logo-div" >
-            <img className="app_logo" src = {logo}/>
-        <h2>useums</h2> */}
-        
+    <div className= "Title">        
       <Grid container className="title__grid__container">
         <Grid item>
           <HeaderLogoButton></HeaderLogoButton>

@@ -10,6 +10,9 @@
     background-color: rgb(255, 255, 255);
     color: rgb(33, 187, 236);
 }
+h2{
+    color: rgb(33, 187, 236);
+}
 .logo-div{ 
     Display: flex;
     Height: 10vh;
@@ -21,6 +24,5 @@
 .title__grid__container{
     direction:row;
     justify-content:center;
-    padding: px;
     align-items:center;
     }

@@ -8,6 +8,7 @@
 .app__header {
   position: sticky;  
   top:0;
+  z-index: 1;
   text-align: center;
   background-color: #FFFFFF;
   min-height: 3vh;
@@ -35,7 +36,7 @@
   direction:row;
   justify-content:center;
   padding: 12px;
-  /* align-items:center; */
+  align-items:center;
 }
 
 .post__tile {
