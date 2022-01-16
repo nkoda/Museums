@@ -1,1 +1,1 @@
-run npm install in /mu directory
+run 'npm start' in /mu directory
