@@ -46,10 +46,10 @@ function App() {
     img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
     },
     {
-      username: "test_username_3",
+      username: "testd",
     caption:"test_caption_3",
     nft_name: "A Bored Ape_3",
-    img_url:"https://pbs.twimg.com/profile_images/1430659995419353092/3RtpXJQH_400x400.jpg"
+    img_url:"http://stereoheadz.com/szmc/meta/images/live/szmc_image_01_00468.png"
     }
   ]);
 

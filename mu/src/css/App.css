@@ -41,7 +41,10 @@
 
 .post__tile {
   padding: 5px;
+  width: 400px;
+  height: auto;
 }
+
 
 @keyframes App-logo-spin {
   from {
