@@ -2,10 +2,10 @@ import { strict as assert } from 'assert';
 import {NftData} from "../src/controller/NftData.js";
 
 describe ("NftData", function() {
-   describe ("getAllCollections", function() {
+   describe ("getAllContractAddresses", function() {
        it ("Should return all collections", async function() {
            let nftData = new NftData();
-           return nftData.getAllCollections().then((result) => {
+           return nftData.getAllContractAddresses().then((result) => {
 
            });
                // .then((result) => nftData.writeData(result))
