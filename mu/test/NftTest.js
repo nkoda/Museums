@@ -6,8 +6,10 @@ describe ("NftData", function() {
        it ("Should return all collections", async function() {
            let nftData = new NftData();
            return nftData.getAllCollections().then((result) => {
-               // assert.equal(result,"Successful");
+
            });
+               // .then((result) => nftData.writeData(result))
+               // .then((result) => assert.equal(result, "Successfully written into file"));
        });
    });
 });
