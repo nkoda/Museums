@@ -1,6 +1,6 @@
 import './App.css';
 import Post from './Post';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -13,7 +13,7 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder.js';
 import * as React from 'react';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { Box, CardContent } from '@material-ui/core';
+import  CardContent from '@material-ui/core/CardContent';
 import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
