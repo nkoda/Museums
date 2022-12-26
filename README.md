@@ -1,7 +1,7 @@
 # Museums - NWHacks 2022 Project
 ## A NFT social media platform
 
-###steps to run the project locally
+### steps to run the project locally
 
 - Clone repository
 - Open a new terminal and locate the /mu directory
